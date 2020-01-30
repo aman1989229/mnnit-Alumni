@@ -10,12 +10,7 @@ import {
     Dimensions,
     TouchableOpacity
    } from 'react-native';
-   {/*importing navigation*/}
-  
-   
-   {/*importing SCreens*/}
-  
-   {/*importing icons*/}
+ 
  
 
 {/*Database setup*/}
@@ -30,25 +25,32 @@ messagingSenderId: '665936192753',
 appId: '1:665936192753:web:929d7aeaf416b12921b550',
 measurementId: 'G-D2BMD8NZWP'
 });
+
+{/*Database setup finish here*/}
+
+ {/*importing navigation*/}
 import { createAppContainer } from "react-navigation";
 import {createStackNavigator} from 'react-navigation-stack';
-{/*Database setup finish here*/}
+
+{/*importing SCreens*/}
 import LoadingScreen from './screens/LoadingScreen';
 import LoginScreen from './screens/LoginScreen';
 import DashboardScreen from './screens/DashboardScreen';
-
-
-
-
+import StartScreen from './screens/StartScreen'; 
+import AdminLoginScreen from './screens/AdminLoginScreen';
+import FacultyLoginScreen from './screens/FacultyLoginScreen';
 
 const AppNavigator = createStackNavigator(
   {
     Loading: LoadingScreen,
     Login: LoginScreen,
-    Dashboard: DashboardScreen
+    Dashboard: DashboardScreen,
+    AdminScreen:AdminLoginScreen,
+    FacultyScreen:FacultyLoginScreen,
+    Start: StartScreen
   },
   {
-    initialRouteName: "Login"
+    initialRouteName: "Start"
   }
 );
 export default createAppContainer(AppNavigator);

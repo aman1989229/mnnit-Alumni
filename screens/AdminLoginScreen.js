@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import Icon from 'react-native-vector-icons/Ionicons';
 const {width:WIDTH}=Dimensions.get('window');
-const LoginScreen = () => {
+const AdminLoginScreen = () => {
     
     return (
         <ImageBackground source={require('../images/back.png')} style={styles.container}>
@@ -61,7 +61,7 @@ const LoginScreen = () => {
     );
 
 }
-export default LoginScreen;
+export default AdminLoginScreen;
 
 const styles = StyleSheet.create({
     container: {
