@@ -26,6 +26,7 @@ const LoadingScreen = () => {
     }
     return (
         <View style={styles.container}>
+            <Text>LoadingScreen</Text>
             <ActivityIndicator size='large'/>
         </View>
     );
